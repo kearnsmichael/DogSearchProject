@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="css/all.css">
+  <title>Adopt || A Dog</title>
+  <style>
+  </style>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <!-- navbar  -->
+    <!-- 
+https://www.iconfinder.com/icons/2427887/dessert_donut_doughnut_fat_sweets_icon
+Creative Commons (Attribution 3.0 Unported);
+https://www.iconfinder.com/korawan_m
+     -->
+    <nav class="navbar navbar-expand-lg px-4">
+      <div class="navbar-brand" href="#">
+        <a href="#" class="nav-icon">
+          <i class="fab fa-facebook"></i></a>
+        <a href="#" class="nav-icon">
+          <i class="fab fa-instagram"></i></a>
+        <a href="#" class="nav-icon">
+        <i class="fab fa-pinterest-square"></i></a>
+        <a href="#" class="nav-icon">
+          <i class="fab fa-twitter-square"></i></a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
+        <span class="toggler-icon"><i class="fas fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="myNav">
+        <ul class="navbar-nav mx-auto text-capitalize">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#about">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#store">dogs</a>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonials" class="nav-link">testimonials</a>
+          </li>
+        </ul>
+        <div class="nav-info-items d-none d-lg-flex ">
+          <!-- single info -->
+          <div class="nav-info align-items-center d-flex justify-content-between mx-lg-5">
+            <span class="info-icon mx-lg-3"><i class="fas fa-phone"></i></span>
+            <p class="mb-0">+ 123 456 789</p>
+          </div>
+          <!-- end of single info -->
+
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
+    <!-- banner  -->
+    <div class="container-fluid">
+      <div class="row max-height justify-content-center align-items-center">
+        <div class="col-10 mx-auto banner text-center">
+          <h1 class="text-capitalize">adopt a <strong class="banner-title ">dog</strong></h1>
+          <a href="#store" class="btn banner-link text-uppercase my-2">explore</a>
+        </div>
+      </div>
+      <!--end of  banner  -->
+  </header>
+  <!-- header -->
+  <!-- about us -->
+  <section class="about py-5" id="about">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-10 mx-auto col-md-6 my-5">
+          <h1 class="text-capitalize">about <strong class="banner-title ">us</strong></h1>
+          <p class="my-4 text-muted w-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aliquam
+            voluptas
+            beatae vitae expedita consectetur nesciunt quia deserunt asperiores facere fuga dicta fugiat corrupti et
+            omnis
+            porro at dolorum! Ad!</p>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase ">explore</a>
+
+        </div>
+        <div class="col-10 mx-auto col-md-6 align-self-center my-5">
+          <div class="about-img__container">
+            <img src="img/about.jpeg" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end of about us -->
+
+
+  <!-- store -->
+  <section id="store" class="store py-5">
+    <div class="container">
+      <!-- section title -->
+      <div class="row">
+        <div class="col-10 mx-auto  text-center">
+          <h1 class="text-capitalize">our <strong class="banner-title ">breeds</strong></h1>
+        </div>
+      </div>
+      <!-- end of section title -->
+      <!--filter buttons -->
+      <div class="row">
+        <div class="col-lg-8 mx-auto d-flex justify-content-around my-2 sortBtn flex-wrap">
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="all">
+            all</a>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
+            data-filter="golden-retrievers">golden retriever</a>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
+            data-filter="huskies">husky</a>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
+            data-filter="labs">lab</a>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
+            data-filter="german-shepherds">german shepherd</a>
+        </div>
+
+      </div>
+      <!-- search -->
+      <div class="row">
+
+        <div class="col-10 mx-auto col-md-6">
+          <form>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend ">
+                <span class="input-group-text search-box" id="search-icon"><i class="fas fa-search"></i></span>
+              </div>
+              <input type="text" class="form-control" placeholder='breed....' id="search-item">
+            </div>
+
+          </form>
+        </div>
+      </div>
+      <!--end of filter buttons -->
+      <!-- store  items-->
+      <div class="row" id="store-items">
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item labs" data-item="labs">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/lab-1.jpeg" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-paw"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Coco - lab</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">500</strong></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item huskies" data-item="huskies">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/husky-1.jpeg" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-paw"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">jack - husky</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">575</strong></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item golden-retrievers" data-item="golden-retrievers">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/golden-retriver-1.jpeg" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-paw"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Milo - Golden Retriever</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">525</strong></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item german-shepherds" data-item="german-shepherds">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/german-shepherd-1.jpeg" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-paw"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name"> Sadie - German Shepherd </h5>
+                <h5 class="store-item-value"> $ <strong id="store-item-price" class="font-weight-bold"> 515 </strong></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item labs" data-item="labs">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/lab-2.jpeg" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-paw"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Bentley - Lab</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">510</strong></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item huskies" data-item="huskies">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/husky-2.jpeg" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-paw"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Athena - Husky</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">525</strong></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item golden-retrievers" data-item="golden-retrievers">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/golden-retriever-2.jpeg" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-paw"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Daisy - Golden Retriever</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">515</strong></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item german-shepherds" data-item="german-shepherds">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/german-shepherd-2.jpeg" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-paw"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Lola - German Shepherd</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">575</strong></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item labs" data-item="labs">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/lab-3.jpeg" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-paw"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name"> Jasper - Lab</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">550</strong></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item huskies" data-item="huskies">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/husky-3.jpeg" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-paw"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name"> Lulu - Husky</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">555</strong></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item golden-retrievers" data-item="golden-retrievers">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/golden-retriever-3.jpeg" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-paw"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name"> Max - Golden Retriever</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">515</strong></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item german-shepherds" data-item="german-shepherds">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/german-shepherd-3.jpeg" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-paw"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Josie - German Shepherd</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">550</strong></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+
+      </div>
+  </section>
+
+  <!-- testimonials -->
+  <section class="testimonials py-5" id="testimonials">
+      <div class="row">
+        <div class="col-10 mx-auto  text-center">
+          <h1 class="text-capitalize">happy <strong class="banner-title ">family</strong></h1>
+          <p>Hear from some of our happy owners!</p>
+          <p>Scroll to see more.</p>
+        </div>
+      </div>
+      <!-- end of section title -->
+    <main class="container">
+      <section class="cardtest">
+        <img src="./img/owner1.png" alt="" />
+        <div>
+          <h3>Owner One</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod error
+            enim laudantium, animi veniam libero eveniet culpa unde perferendis
+            illo fugit corporis, voluptatibus totam dolorum, maiores magnam
+            officia. Ab, delectus.
+          </p>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase">Read More</a>
+        </div>
+      </section>
+    
+      <section class="cardtest" data-aos="fade-left">
+        <img src="./img/owner2.png" alt="" />
+        <div>
+          <h3>Owner Two</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod error
+            enim laudantium, animi veniam libero eveniet culpa unde perferendis
+            illo fugit corporis, voluptatibus totam dolorum, maiores magnam
+            officia. Ab, delectus.
+          </p>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase ">Read More</a>
+        </div>
+      </section>
+    
+      <section class="cardtest" data-aos="fade-right">
+        <img src="./img/owner3.png" alt="" />
+        <div>
+          <h3>Owner Three</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod error
+            enim laudantium, animi veniam libero eveniet culpa unde perferendis
+            illo fugit corporis, voluptatibus totam dolorum, maiores magnam
+            officia. Ab, delectus.
+          </p>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase">Read More</a>
+        </div>
+      </section>
+    
+      <section class="cardtest" data-aos="fade-left">
+        <img src="./img/owner4.png" alt="" />
+        <div>
+          <h3>Owner Four</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod error
+            enim laudantium, animi veniam libero eveniet culpa unde perferendis
+            illo fugit corporis, voluptatibus totam dolorum, maiores magnam
+            officia. Ab, delectus.
+          </p>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase ">Read More</a>
+        </div>
+      </section>
+    
+      <section class="cardtest" data-aos="fade-right">
+        <img src="./img/owner5.png" alt="" />
+        <div>
+          <h3>Owner Five</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod error
+            enim laudantium, animi veniam libero eveniet culpa unde perferendis
+            illo fugit corporis, voluptatibus totam dolorum, maiores magnam
+            officia. Ab, delectus.
+          </p>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase ">Read More</a>
+        </div>
+      </section>
+    </main>
+  </section>
+    
+  <!-- end of testimonials -->
+  
+  <!-- jquery -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- script js -->
+  <script src="js/app.js"></script>
+  
+</body>
+
+</html>
